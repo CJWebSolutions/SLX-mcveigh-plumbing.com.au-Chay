@@ -1,0 +1,387 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css?family=Julius+Sans+One');
+@import url('https://fonts.googleapis.com/css?family=Raleway');
+/*----------------------------------------------------------------
+    Branding Colour
+----------------------------------------------------------------*/
+
+#header1 p,
+header a, 
+header span, 
+#header2a a:hover, 
+#header2a:before, 
+#header2b a,
+#header2b a:hover {
+    color: #3a3b3f;
+}
+
+blockquote,
+body, 
+ul li, 
+.formbuilder-form label {
+    font-size: 17px;
+    color: #222;
+}
+
+#content h1,
+#content h2,
+#content h3 {
+    color: #555555;
+    font-weight: bold;
+}
+
+#contact h1,
+#contact h2,
+#contact h3 {
+    color: #fff;
+    font-weight: bold;
+}
+
+#services h3 {
+    font-weight: bold;
+    color: #d5d5d5;
+}
+
+footer a:hover,
+#services p,
+.contact_detail,
+.contact_detail a,
+.contact_detail a:hover,
+.contact_detail a:focus,
+#banner h1, 
+#banner p {
+    color: #fff;
+}
+
+
+#header2b a,
+footer a, 
+.btn, 
+.btn:hover, 
+.btn:focus, 
+.btn:active, 
+.formbuilder-form input#submit-form,
+.formbuilder-form input#submit-form:hover, 
+#extraFormsContainer .modal-dialog .formbuilder-form input#submit-form, 
+#extraFormsContainer .modal-dialog .formbuilder-form input#submit-form:hover {
+    text-decoration: none;
+}
+
+footer a, 
+#content h1,
+#content h2,
+#content h3,
+#contact h1,
+#contact h2,
+#contact h3 {
+    text-transform: uppercase;
+}
+/*----------------------------------------------------------------
+    Custom Styles
+----------------------------------------------------------------*/
+
+h1, 
+h2, 
+h3, 
+h4,
+p, 
+#header1 p,
+footer a {
+    font-family: 'Julius Sans One', sans-serif;
+}
+
+p,
+.btn, 
+.formbuilder-form input#submit-form, 
+#extraFormsContainer .modal-dialog .formbuilder-form input#submit-form {
+    font-family: 'Raleway', sans-serif;
+}
+/*----------------------------------------------------------------
+- Form
+----------------------------------------------------------------*/
+
+.form, #quote_form_form, 
+#extraFormsContainer .modal-dialog {
+    background-color: rgb(255, 255, 255);
+}
+
+/*----------------------------------------------------------------
+- Buttons
+----------------------------------------------------------------*/
+
+.btn {
+    color: #fff;
+    border-radius:0px;
+    border: 2px solid rgb(255, 255, 255);
+    background-color: transparent;
+}
+
+.formbuilder-form input#submit-form, 
+#extraFormsContainer .modal-dialog .formbuilder-form input#submit-form {
+    color: #d2d2d2;
+    border-color: rgb(28, 28, 28);
+    background-color: rgb(58, 59, 63);
+}
+
+.btn:hover,
+.formbuilder-form input#submit-form:hover, 
+#extraFormsContainer .modal-dialog .formbuilder-form input#submit-form:hover {
+    background-color: rgba(0, 0, 0, 0.63);
+    color: #d2d2d2;
+    border:none;
+}
+
+
+/*----------------------------------------------------------------
+- Header
+----------------------------------------------------------------*/
+
+#header{
+    padding: 5px;
+}
+
+#header2a,
+#header1 p {
+    font-weight:100;
+}
+
+#header1 p {
+    font-size:35px;
+}
+
+#header2 {
+    padding-bottom:25px;
+}
+
+#header2a:before {
+    display:none;
+}
+/*----------------------------------------------------------------
+- Banner 
+----------------------------------------------------------------*/
+
+#banner, 
+#banner h1 {
+    margin:0;
+    text-align: center;
+}
+
+#banner h1 {
+    font-size:55px;
+}
+
+#banner p {
+    font-size: 20px;
+}
+
+#banner {
+    padding: 90px 0 100px;
+}
+
+.banner_cover {
+    opacity: 1.0;
+    background-color: rgba(255, 255, 255, 1);
+}
+
+/*----------------------------------------------------------------
+- Services
+----------------------------------------------------------------*/
+
+#services{
+    background-color: rgba(58, 59, 63, 1);
+}
+
+#service1,
+#service2,
+#service3,
+#service4 {
+    transition: 0.2s 0.2s ease-out;
+    padding-top:20px;
+    padding-bottom:30px;
+}
+#service1:hover,
+#service2:hover,
+#service3:hover,
+#service4:hover {
+    transform: scale(1.1);
+    border-radius:20px;
+}
+
+/*----------------------------------------------------------------
+- Content
+----------------------------------------------------------------*/
+
+#content ul li:before {
+    content:'\f00c';
+}
+
+blockquote {
+    background-color: #efece2;
+}
+
+/*----------------------------------------------------------------
+- Contact
+----------------------------------------------------------------*/
+
+.contact_address {
+    margin-bottom: 10px;
+}
+
+/*----------------------------------------------------------------
+    Hide Blocks
+----------------------------------------------------------------*/
+#contact2c,
+#contact2d, 
+#contact2e,
+#contact2e,
+#contact1b {
+    display:none;
+}
+
+/*----------------------------------------------------------------
+    Footer
+----------------------------------------------------------------*/
+
+footer *, 
+footer a , 
+footer {
+    color: #555;
+}
+
+footer {
+    background-color: rgba(239, 236, 226, 1);
+    padding: 25px 0 25px;
+}
+
+/*----------------------------------------------------------------
+    Media Queries
+----------------------------------------------------------------*/
+
+@media (max-width: 1199px) {
+    .banner_cover{
+        height: 90px;
+    }
+    #header1 p {
+        font-size:30px;
+    }
+}
+@media only screen and (min-width: 1200px){
+   .banner_cover{
+        height: 90px;
+    }
+}
+@media (max-width:991px) {
+    #header1 p {
+        font-size:23px;
+    }
+}
+
+@media (max-width: 767px) {
+
+    #header2a {
+        line-height:25px;
+        font-size: 30px;
+    }
+    
+    #header2b a{
+        font-size:17px;
+    }
+    #service3 {
+        clear:left;
+    }
+    
+    #content1b ul li:before, 
+    #content2a ul li:before, 
+    #content3b ul li:before, 
+    #content4a ul li:before, 
+    #content5b ul li:before,
+    #content6a ul li:before {
+            position: relative;
+            top: auto;
+            left: auto;
+            margin-right: 8px;
+        }
+
+    #banner {
+        background-size: cover;
+        background-position: center top;
+        width: 100%;
+        height: 100%;
+    }
+    .banner_cover{
+        height: 138px;
+    }
+            
+    #banner h1 {
+        font-size:45px;
+        line-height: 45px;
+    }
+    
+    .btn {
+        padding:15px;
+        display:block;
+        white-space: normal;
+    }
+    .content_block {
+        padding-bottom:20px;
+    }
+
+    #service1:hover,
+    #service2:hover,
+    #service3:hover,
+    #service4:hover {
+        transform: scale(1.0);
+    }
+}
+
+@media (min-width: 767px) {
+  #content1b, 
+  #content2a, 
+  #content3b, 
+  #content4a, 
+  #content5b, 
+  #content6a {
+    padding-top: 31px;
+    }
+}
+@media only screen and (max-width: 361px) and (min-width:330px) {
+    #header1 p {
+        font-size:20px;
+    }
+}
+@media only screen and (max-width: 329px) and (min-width:200px) {
+    #header1 p {
+        font-size:14px;
+    }
+}
+/*- Animation & Extras-*/
+#wrapper {display: flex; flex-direction: column;}
+#services {padding: 54px 0 33px;order: 2;}
+#banner { order: 1; }
+#content { order: 3; }
+#contact { order: 4; }
+footer { order: 5; }
+
+#banner1 {
+    animation:move 2s ease;
+    width: 100%;
+    padding-left: 10%;
+    padding-right:10%;
+}
+
+@-webkit-keyframes move {
+    from {transform: scale(0.8);opacity:0;}
+    to {transform: scale(1.0);opacity:1;}
+}
+
+.btn:hover, 
+.btn:focus, 
+.btn:active, 
+.btn.active, 
+.open>.dropdown-toggle.btn,
+.formbuilder-form input#submit-form:hover, 
+#extraFormsContainer .modal-dialog .formbuilder-form input#submit-form:hover,
+#service1:hover,#service2:hover,#service3:hover,#service4:hover {
+    transform: scale(1.1);
+    transition: all 200ms ease-in;
+}
